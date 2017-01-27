@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+#div1 {
+	background-color: #b4caed;
+}
+
+#div2 {
+	background-color: #b4dded;
+}
+
+#div3 {
+	background-color: #b4eddb;
+
+}
+
+#div4 {
+	border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+aside {
+	display: block;
+	float: left;
+	border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+#div5 {
+	border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    background-color: #dbdbdb;
+
+}
+
+
+</style>
+<div class="container" id="div1" style="width: 80%;">
+	<div class="jumbotron" id="div2">
+	<br />
+	<h1>Friends</h1>
+	</div>
+	
+	<aside>
+	<div class="inner-div" id="div3" style="width: 275px;">
+	<center>
+	<br />
+	<br />
+	<h3>Add a Friend</h3>
+	<p><input type="text" id="name" placeholder="Name"></p>
+	<p><input type="text" id="occupation" placeholder="Job"></p>
+	<p><input type="text" id="age" placeholder="Age"></p> 
+		<button type="button" class="btn btn-primary-outline">Add</button>
+
+	<h3>Friends</h3>
+		
+	<section class="container" style="overflow:scroll; height:425px; width: 250px;background-color: white;" id="div4">
+	<ul id="friends">
+			
+	</ul>
+	</section>
+	<br />
+	</center>
+	</div>
+	</aside>
+
+	<section class="container" style="height:100%; width: 100%;" id="div5">
+		<br />
+		<h1><u><center>Profile</center></u></h1>
+
+		<ul style="list-style: none;">
+		<center>
+			<li><h3>Name: <input type="text" id="enteryourname" placeholder="Add your name" style="font-size: 14px"></h3></li>
+			<li><h3>Job: <input type="text" id="enteryourjob" placeholder="Add your occupation" style="font-size: 14px"></h3></li>
+			<li><h3>Age: <input type="text" id="enteryourage" placeholder="Add your age" style="font-size: 14px"></h3></li>
+			<button type="button" class="btn btn-primary-outline">Save</button>
+		</center>
+		</ul>
+	</section>
+
+</div>
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+	
+</body>
+</html>
